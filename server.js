@@ -15,10 +15,6 @@ app.get('/', function(req, res) {
   res.redirect('/students')
 })
 
-app.get('/waffles', function(req, res) {
-  res.redirect('/home')
-})
-
 app.get('/students', function(req, res) {
   res.render('students/index', {
     students: students
